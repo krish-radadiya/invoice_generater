@@ -13,7 +13,10 @@ class _DetailPageState extends State<details> {
   Widget build(BuildContext context) {
     bool cart = false;
     Map<String, dynamic> data =
-        ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
+    ModalRoute
+        .of(context)!
+        .settings
+        .arguments as Map<String, dynamic>;
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -88,14 +91,15 @@ class _DetailPageState extends State<details> {
                   children: [
                     ...data['image']
                         .map(
-                          (e) => SizedBox(
+                          (e) =>
+                          SizedBox(
                             height: 350,
                             child: Image.network(
                               '$e',
                               fit: BoxFit.cover,
                             ),
                           ),
-                        )
+                    )
                         .toList(),
                   ],
                 ),
