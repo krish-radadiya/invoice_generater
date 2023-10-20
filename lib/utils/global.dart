@@ -25,7 +25,7 @@ class Global {
         },
         {
           'id': 2,
-          'name': 'black & white Sneakers',
+          'name': 'black Sneakers',
           'price': 3000,
           'ratting': 4,
           'discount': 10,
@@ -254,7 +254,7 @@ class Global {
         },
         {
           'id': 3,
-          'name': ' HawaLker Lite chample',
+          'name': ' HawaLker ',
           'price': 2100,
           'ratting': 4.1,
           'discount': 20,
@@ -528,6 +528,7 @@ class Global {
 }
 
 List<Map<String, dynamic>> cartProduct = [];
+List<Map<String, dynamic>> favProduct = [];
 
 buyProductPrice() {
   double sum = 0;
@@ -541,3 +542,8 @@ lengthCart() {
   num cartLength = cartProduct.length;
   return cartLength;
 }
+
+bool ishome = true;
+bool isLikes = false;
+bool iscart = false;
+bool isprofile = false;

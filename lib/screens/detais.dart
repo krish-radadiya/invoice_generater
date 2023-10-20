@@ -89,7 +89,7 @@ class _DetailPageState extends State<details> {
                     ...data['image']
                         .map(
                           (e) => SizedBox(
-                            height: 370,
+                            height: 350,
                             child: Image.network(
                               '$e',
                               fit: BoxFit.cover,
@@ -119,125 +119,127 @@ class _DetailPageState extends State<details> {
               padding: const EdgeInsets.only(
                   left: 20, right: 20, top: 45, bottom: 24),
               alignment: Alignment.center,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Column(
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          SizedBox(
-                            width: 230,
-                            child: Text(
-                              "${data['name']}",
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            SizedBox(
+                              width: 230,
+                              child: Text(
+                                "${data['name']}",
+                                style: const TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ),
+                            Text(
+                              "₹ ${data['price']}",
                               style: const TextStyle(
                                 fontSize: 20,
+                                color: Colors.red,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                          ),
-                          Text(
-                            "₹ ${data['price']}",
-                            style: const TextStyle(
-                              fontSize: 20,
-                              color: Colors.red,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 9),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "${data['cata']}",
-                            style: TextStyle(
-                              fontSize: 17,
-                              color: Colors.grey.shade700,
-                            ),
-                          ),
-                          Row(
-                            children: [
-                              const Icon(
-                                Icons.star,
-                                color: Colors.amber,
-                                size: 17,
+                          ],
+                        ),
+                        const SizedBox(height: 9),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "${data['cata']}",
+                              style: TextStyle(
+                                fontSize: 17,
+                                color: Colors.grey.shade700,
                               ),
-                              Text(
-                                "${data['ratting']}",
-                                style: TextStyle(
-                                  fontSize: 17,
-                                  color: Colors.grey.shade700,
+                            ),
+                            Row(
+                              children: [
+                                const Icon(
+                                  Icons.star,
+                                  color: Colors.amber,
+                                  size: 17,
                                 ),
-                              ),
-                            ],
+                                Text(
+                                  "${data['ratting']}",
+                                  style: TextStyle(
+                                    fontSize: 17,
+                                    color: Colors.grey.shade700,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Brand",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
                           ),
-                        ],
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        "Brand",
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
                         ),
-                      ),
-                      Text(
-                        "${data['brandName']}",
-                        style: const TextStyle(
-                          fontSize: 20,
-                          color: Colors.grey,
+                        Text(
+                          "${data['brandName']}",
+                          style: const TextStyle(
+                            fontSize: 20,
+                            color: Colors.grey,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        "Stock",
-                        style: TextStyle(
-                          fontSize: 20,
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          "Stock",
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
                         ),
-                      ),
-                      Text(
-                        "${data['stock']}",
-                        style: const TextStyle(
-                          fontSize: 20,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.bold,
+                        Text(
+                          "${data['stock']}",
+                          style: const TextStyle(
+                            fontSize: 20,
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const Text(
-                        "Description",
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
+                      ],
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          "Description",
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      const SizedBox(height: 10),
-                      Text(
-                        "${data['discription']}",
-                        style: TextStyle(
-                          fontSize: 16,
-                          color: Colors.grey.shade700,
+                        const SizedBox(height: 10),
+                        Text(
+                          "${data['discription']}",
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.grey.shade700,
+                          ),
                         ),
-                      ),
-                    ],
-                  ),
-                ],
+                      ],
+                    ),
+                  ],
+                ),
               ),
             ),
           ],

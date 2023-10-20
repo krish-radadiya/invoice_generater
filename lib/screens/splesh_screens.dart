@@ -16,7 +16,7 @@ class _splesh_screenState extends State<splesh_screen> {
       Navigator.of(context).pushReplacementNamed('homepage');
     });
     return Scaffold(
-      backgroundColor: Colors.blue.withOpacity(0.3),
+      backgroundColor: Color(0xffD9EDFA),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -34,9 +34,9 @@ class _splesh_screenState extends State<splesh_screen> {
             Text(
               "shoes world",
               style: TextStyle(
-                color: Colors.white.withOpacity(0.5),
-                fontSize: 30,fontWeight: FontWeight.bold
-              ),
+                  color: Colors.black,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold),
             ),
           ],
         ),
