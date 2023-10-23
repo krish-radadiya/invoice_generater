@@ -17,8 +17,8 @@ void main() {
         'cart': (context) => const cartPage(),
         'cart': (context) => const cartPage(),
         'details': (context) => const details(),
-        'PDF': (context) => const pdf_screen(),
-        'Chackout': (context) => const chackout(),
+        'PDF': (context) => const Pdf(),
+        'Chackout': (context) => const Checkout(),
       },
     ),
   );
