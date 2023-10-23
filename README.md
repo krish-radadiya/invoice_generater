@@ -1,16 +1,6 @@
-# invoice_generater
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![9d3e771a-db71-42ac-a41a-8ba4fc04d50d](https://github.com/krish-radadiya/invoice_generater/assets/113992828/dd7a2cac-39f1-4d01-8960-63ffe1affa43)
+![a632da88-b373-472e-856d-955a2085e0eb](https://github.com/krish-radadiya/invoice_generater/assets/113992828/59221c1b-4a65-41c8-9ff3-841366a19c58)
+![51856150-cdbf-431b-96de-ca26ddc3be8b](https://github.com/krish-radadiya/invoice_generater/assets/113992828/8838b539-e4b6-43dc-9aef-bfc8f5405fc5)
+![d90026d2-debc-4c5f-ba81-8732daf19cc5](https://github.com/krish-radadiya/invoice_generater/assets/113992828/8f465db9-f61e-4362-8a2b-f7b4a3e77f4e)
+![57431478-0865-4ef1-974d-0a8a92238b7e](https://github.com/krish-radadiya/invoice_generater/assets/113992828/eeaee1db-ecf7-4d24-9b5a-1db106a5f4b0)
+![18662b5b-62da-4586-90de-e63fd4593beb](https://github.com/krish-radadiya/invoice_generater/assets/113992828/d1bf7496-f846-437d-b150-9303a5f633bc)
